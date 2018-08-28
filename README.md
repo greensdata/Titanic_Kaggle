@@ -18,7 +18,6 @@ what will you read in this tutorial?
 
 8 Conclusion
 
-# 1- Define Problem
 
 # 1-1 introduction
 
@@ -88,3 +87,32 @@ The count variable shows that 177 values are missing in the Age column. One solu
 
 let's now make some charts.
 let's visualize survival based on the gender
+
+# 5 - feature engineering
+In the previous part, we flirted with the data and spotted some interesting correlations.
+
+In this part, we'll see how to process and transform these variables in such a way the data becomes manageable by a machine learning algorithm.
+
+We'll also create, or "engineer" additional features that will be useful in building the model.
+
+We'll see along the way how to process text variables like the passenger names and integrate this information in our model.
+
+We will break our code in separate functions for more clarity.
+
+But first, let's define a print function that asserts whether or not a feature has been processed.
+# 5-1 Loading The Data
+One trick when starting a machine learning problem is to append the training set to the test set together.
+
+We'll engineer new features using the train set to prevent information leakage. Then we'll add these variables to the test set.
+
+Let's load the train and test sets and append them together.
+# 5-2 Extracting the passenger titles
+When looking at the passenger names one could wonder how to process them to extract a useful information.
+
+If you look closely at these first examples:
+
+Braund, Mr. Owen Harris Heikkinen, Miss. Laina Oliva y Ocana, Dona. Fermina Peter, Master. Michael J You will notice that each name has a title in it ! This can be a simple Miss. or Mrs. but it can be sometimes something more sophisticated like Master, Sir or Dona. In that case, we might introduce an additional information about the social status by simply parsing the name and extracting the title and converting to a binary variable.
+
+Let's see how we'll do that in the function below.
+
+Let's first see what the different titles are in the train set
