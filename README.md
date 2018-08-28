@@ -1,7 +1,7 @@
 # Titanic_Kaggle
 the goal is to predict the survival or the death of a given passenger based on 12 feature such as sex, age ,etc...
 what will you read in this tutorial?
-
+-----------------------------------------
 1 Define Problem
 
 2 Installation
@@ -17,7 +17,7 @@ what will you read in this tutorial?
 7 Feature Selection
 
 8 Conclusion
-
+-----------------------------------------
 # 1 Define Problem
 this is a binary classification to detect survived people. we have two datasets, train, and test.
 when we build our model we should predict for the new passenger that he or she were been survived or dead.
@@ -28,11 +28,11 @@ RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean 
 # 1-2 dataset
 
 Titanic dataset is an open dataset where you can reach from many different repositories and GitHub accounts. However, downloading from Kaggle will be definitely the best choice as the other sources may have slightly different versions and may not offer separate train and test files. So, please visit this link to download the datasets (Train.csv and Test.csv) to get started.
-
+-----------------------------------------
 # 2- installation
 
 A very easy way to install these packages is to download and install the Conda distribution that encapsulates them all. This distribution is available on all platforms (Windows, Linux and Mac OSX).
-
+-----------------------------------------
 # 3- Import
 
 Throughout this jupyter notebook, I will be using Python at each level of the pipeline.
@@ -43,7 +43,7 @@ Pandas for data manipulation and ingestion
 Matplotlib and seaborn for data visualization
 Numpy for multidimensional array computing
 sklearn for machine learning and predictive modeling
-
+-----------------------------------------
 # 4 - Exploratory data analysis
 
 As in different data projects, we'll first start diving into the data and build up our first intuitions.
@@ -89,7 +89,7 @@ The count variable shows that 177 values are missing in the Age column. One solu
 
 let's now make some charts.
 let's visualize survival based on the gender
-
+-----------------------------------------
 # 5 - feature engineering
 In the previous part, we flirted with the data and spotted some interesting correlations.
 
@@ -118,6 +118,7 @@ Braund, Mr. Owen Harris Heikkinen, Miss. Laina Oliva y Ocana, Dona. Fermina Pete
 Let's see how we'll do that in the function below.
 
 Let's first see what the different titles are in the train set
+-----------------------------------------
 # 6- Modeling
 
 In this part, we use our knowledge of the passengers based on the features we created and then build a statistical model. You can think of this model as a box that crunches the information of any new passenger and decides whether or not he survives.
@@ -146,7 +147,7 @@ Keep in mind that we'll have to reiterate on 2. and 3. until an acceptable evalu
 
 
 Let's start by importing the useful libraries.
-
+-----------------------------------------
 # 7 - Conclusion
 In this article, we explored an interesting dataset brought to us by Kaggle.
 
@@ -170,3 +171,4 @@ Try different models : logistic regressions, Gradient Boosted trees, XGboost, ..
 Try ensemble learning techniques (stacking)
 Run auto-ML frameworks
 I would be more than happy if you could find out a way to improve my solution. This could make me update the article and definitely give you credit for that. So feel free to post a comment.
+-----------------------------------------
