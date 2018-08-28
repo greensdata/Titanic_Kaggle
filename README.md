@@ -116,3 +116,55 @@ Braund, Mr. Owen Harris Heikkinen, Miss. Laina Oliva y Ocana, Dona. Fermina Pete
 Let's see how we'll do that in the function below.
 
 Let's first see what the different titles are in the train set
+# 6- Modeling
+
+In this part, we use our knowledge of the passengers based on the features we created and then build a statistical model. You can think of this model as a box that crunches the information of any new passenger and decides whether or not he survives.
+
+There is a wide variety of models to use, from logistic regression to decision trees and more sophisticated ones such as random forests and gradient boosted trees.
+
+We'll be using Random Forests. Random Froests has proven a great efficiency in Kaggle competitions.
+
+For more details about why ensemble methods perform well, you can refer to these posts:
+
+http://mlwave.com/kaggle-ensembling-guide/
+
+http://www.overkillanalytics.net/more-is-always-better-the-power-of-simple-ensembles/
+
+Back to our problem, we now have to:
+
+Break the combined dataset in train set and test set.
+
+Use the train set to build a predictive model.
+
+Evaluate the model using the train set.
+
+Test the model using the test set and generate and output file for the submission.
+
+Keep in mind that we'll have to reiterate on 2. and 3. until an acceptable evaluation score is achieved.
+
+
+Let's start by importing the useful libraries.
+
+# 7 - Conclusion
+In this article, we explored an interesting dataset brought to us by Kaggle.
+
+We went through the basic bricks of a data science pipeline:
+
+Data exploration and visualization: an initial step to formulate hypotheses
+Data cleaning
+Feature engineering
+Feature selection
+Hyperparameters tuning
+Submission
+Blending
+This post can be downloaded as a notebook if you ever want to test and play with it : my github repo
+
+Lots of articles have been written about this challenge, so obviously there is a room for improvement.
+
+Here is what I suggest for next steps:
+
+Dig more in the data and eventually build new features.
+Try different models : logistic regressions, Gradient Boosted trees, XGboost, ...
+Try ensemble learning techniques (stacking)
+Run auto-ML frameworks
+I would be more than happy if you could find out a way to improve my solution. This could make me update the article and definitely give you credit for that. So feel free to post a comment.
